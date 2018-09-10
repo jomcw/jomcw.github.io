@@ -1,19 +1,10 @@
-@mixin center($horizontal: true, $vertical: true) {
-  position: absolute;
-
-  @if ($horizontal and $vertical) {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-  }
-  
-}
-
-header {
+@mixin centre($position: relative) {
+  position: relative;
   top: 50%;
   left: 50%;
   transfrom: translate(-50, -50);
 }
 
-
+.header {
+  include centre();
+}
