@@ -10,17 +10,10 @@
   
 }
 
-.parent {
-  position: relative;
-}
-
-.child {
-  background: <img src="taika.gif">
-  padding: 20px;
-
-  &.both {
-    @include center;
-  }
+header {
+  top: 50%;
+  left: 50%;
+  transfrom: translate(-50, -50);
 }
 
 
